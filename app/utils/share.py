@@ -118,6 +118,7 @@ class V2rayShareLink(str):
         if net == 'grpc':
             payload['serviceName'] = path
             payload["host"] = host
+            payload["type"] = 'multi'
         elif net == 'quic':
             payload['key'] = path
             payload["quicSecurity"] = host
